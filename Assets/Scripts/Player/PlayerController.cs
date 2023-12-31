@@ -120,7 +120,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmos()//레이캐스트 테스트. 기즈모는 시각화를위해 사용됨. 씬뷰에서만 보임.
     {
         Gizmos.color = Color.red;
         Gizmos.DrawRay(transform.position + (transform.forward * 0.2f), Vector3.down);
